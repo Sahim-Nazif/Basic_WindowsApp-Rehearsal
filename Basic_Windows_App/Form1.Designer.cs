@@ -34,6 +34,7 @@
             this.lblResult = new System.Windows.Forms.Label();
             this.btnCelcius = new System.Windows.Forms.Button();
             this.btnFarenheit = new System.Windows.Forms.Button();
+            this.btnNewConvertor = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -91,11 +92,22 @@
             this.btnFarenheit.UseVisualStyleBackColor = true;
             this.btnFarenheit.Click += new System.EventHandler(this.btnFarenheit_Click);
             // 
+            // btnNewConvertor
+            // 
+            this.btnNewConvertor.Location = new System.Drawing.Point(277, 345);
+            this.btnNewConvertor.Name = "btnNewConvertor";
+            this.btnNewConvertor.Size = new System.Drawing.Size(94, 44);
+            this.btnNewConvertor.TabIndex = 6;
+            this.btnNewConvertor.Text = "New Convertor";
+            this.btnNewConvertor.UseVisualStyleBackColor = true;
+            this.btnNewConvertor.Click += new System.EventHandler(this.btnNewConvertor_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(664, 450);
+            this.Controls.Add(this.btnNewConvertor);
             this.Controls.Add(this.btnFarenheit);
             this.Controls.Add(this.btnCelcius);
             this.Controls.Add(this.lblResult);
@@ -117,6 +129,7 @@
         private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.Button btnCelcius;
         private System.Windows.Forms.Button btnFarenheit;
+        private System.Windows.Forms.Button btnNewConvertor;
     }
 }
 

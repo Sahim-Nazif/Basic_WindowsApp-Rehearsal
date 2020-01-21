@@ -25,6 +25,13 @@ namespace Basic_Windows_App
             lblResult.Text = farenheit.ToString();
         }
 
+        private void btnNewConvertor_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Temp temp = new Temp();
+            temp.Show();
+        }
+
         private void btnCelcius_Click(object sender, EventArgs e)
         {
             farenheit = double.Parse(txtTemp.Text);
