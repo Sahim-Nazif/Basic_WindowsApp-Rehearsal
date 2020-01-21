@@ -89,6 +89,7 @@
             this.btnFarenheit.TabIndex = 5;
             this.btnFarenheit.Text = "Farenheit";
             this.btnFarenheit.UseVisualStyleBackColor = true;
+            this.btnFarenheit.Click += new System.EventHandler(this.btnFarenheit_Click);
             // 
             // Form1
             // 

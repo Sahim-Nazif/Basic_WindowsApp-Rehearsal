@@ -18,6 +18,13 @@ namespace Basic_Windows_App
             InitializeComponent();
         }
 
+        private void btnFarenheit_Click(object sender, EventArgs e)
+        {
+            celcius = double.Parse(txtTemp.Text);
+            farenheit = (celcius * 9) / 5 + 32;
+            lblResult.Text = farenheit.ToString();
+        }
+
         private void btnCelcius_Click(object sender, EventArgs e)
         {
             farenheit = double.Parse(txtTemp.Text);
