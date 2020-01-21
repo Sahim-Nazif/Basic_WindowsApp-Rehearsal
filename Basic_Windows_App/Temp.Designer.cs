@@ -71,6 +71,7 @@
             this.btnConvert.TabIndex = 5;
             this.btnConvert.Text = "Convert";
             this.btnConvert.UseVisualStyleBackColor = true;
+            this.btnConvert.Click += new System.EventHandler(this.btnConvert_Click);
             // 
             // chboxCelcius
             // 
