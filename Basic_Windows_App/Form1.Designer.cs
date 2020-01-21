@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTemp = new System.Windows.Forms.TextBox();
             this.lblResult = new System.Windows.Forms.Label();
             this.btnCelcius = new System.Windows.Forms.Button();
             this.btnFarenheit = new System.Windows.Forms.Button();
@@ -55,12 +55,12 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Enter Temprature  :";
             // 
-            // textBox1
+            // txtTemp
             // 
-            this.textBox1.Location = new System.Drawing.Point(220, 119);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(226, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtTemp.Location = new System.Drawing.Point(220, 119);
+            this.txtTemp.Name = "txtTemp";
+            this.txtTemp.Size = new System.Drawing.Size(226, 20);
+            this.txtTemp.TabIndex = 2;
             // 
             // lblResult
             // 
@@ -79,6 +79,7 @@
             this.btnCelcius.TabIndex = 4;
             this.btnCelcius.Text = "Celcius";
             this.btnCelcius.UseVisualStyleBackColor = true;
+            this.btnCelcius.Click += new System.EventHandler(this.btnCelcius_Click);
             // 
             // btnFarenheit
             // 
@@ -97,7 +98,7 @@
             this.Controls.Add(this.btnFarenheit);
             this.Controls.Add(this.btnCelcius);
             this.Controls.Add(this.lblResult);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTemp);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
@@ -111,7 +112,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTemp;
         private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.Button btnCelcius;
         private System.Windows.Forms.Button btnFarenheit;

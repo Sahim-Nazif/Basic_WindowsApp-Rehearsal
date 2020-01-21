@@ -12,9 +12,20 @@ namespace Basic_Windows_App
 {
     public partial class Form1 : Form
     {
+        double celcius, farenheit;
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void btnCelcius_Click(object sender, EventArgs e)
+        {
+            farenheit = double.Parse(txtTemp.Text);
+
+            celcius = (farenheit -32)* 5/9;
+
+           lblResult.Text= celcius.ToString();
+            
         }
     }
 }
